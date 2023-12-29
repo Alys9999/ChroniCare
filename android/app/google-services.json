@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "450241109676",
+    "project_id": "chronicare-d765f",
+    "storage_bucket": "chronicare-d765f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450241109676:android:53c7cd15cd106f18eac909",
+        "android_client_info": {
+          "package_name": "com.uci.chronicare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAuqvhGZpwCe2gX5dqvsCIUAZGRzvbPUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
