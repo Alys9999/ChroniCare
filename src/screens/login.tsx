@@ -4,7 +4,8 @@ import {
   Image,
   SafeAreaView,
   StyleSheet,
-  Dimensions
+  Dimensions,
+  View
 } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 
@@ -16,13 +17,13 @@ function Login(): React.JSX.Element {
 
     return (
       <SafeAreaView style={{width: screenWidth, height: screenHeight}}>
-        <view>
+        <View>
         <Image source={require('../assets/chroniLogo.png')} style={styles.ratioLogo}></Image>
-        </view>
-        <view>
+        </View>
+        <View>
             <TextInput></TextInput>
             <TextInput></TextInput>
-        </view>
+        </View>
         
       </SafeAreaView>
     );

@@ -1,24 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import SplashScreen from './screens/splashScreen'; // Path to your SplashScreen component
+import SplashScreen from 'react-native-splash-screen';
 import Login from './screens/login';
 
-// Import other screens as needed
+
 
 const Stack = createStackNavigator();
 
 const App = () => {
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="SplashScreen">
         <Stack.Screen 
-          name="SplashScreen" 
-          component={SplashScreen} 
+          name="login" 
+          component={Login} 
           options={{ headerShown: false }} 
         />
       </Stack.Navigator>
-      <Stack.Screen name='login' component={Login}  ></Stack.Screen>
     </NavigationContainer>
   );
 };
